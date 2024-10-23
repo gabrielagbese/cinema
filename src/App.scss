@@ -1,0 +1,65 @@
+@import "breakpoints";
+
+#root {
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.main-container {
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    background-color: blue;
+    overflow: hidden;
+    @include xs {
+    }
+    @include lg {
+        display: flex;
+    }
+}
+
+.stage-container {
+    background: black;
+    overflow-x: hidden;
+    @include xs {
+        width: 100%;
+        height: 70%;
+    }
+    @include lg {
+        min-width: 70%;
+        width: 70%;
+        height: 100%;
+    }
+}
+
+.stage {
+    min-width: 400%;
+    width: 400%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.stage-section {
+    width: 100%;
+    height: 100%;
+    border: thin solid red;
+    box-sizing: border-box;
+}
+
+.navigation-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.navigation {
+    min-width: 100%;
+    height: 20%;
+}

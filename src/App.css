@@ -1,0 +1,81 @@
+#root {
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.main-container {
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  background-color: blue;
+  overflow: hidden;
+}
+
+@media (min-width: 1025px) {
+  .main-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.stage-container {
+  background: black;
+  overflow-x: hidden;
+}
+
+@media (min-width: 0px) {
+  .stage-container {
+    width: 100%;
+    height: 70%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .stage-container {
+    min-width: 70%;
+    width: 70%;
+    height: 100%;
+  }
+}
+
+.stage {
+  min-width: 400%;
+  width: 400%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.stage-section {
+  width: 100%;
+  height: 100%;
+  border: thin solid red;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navigation-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.navigation {
+  min-width: 100%;
+  height: 20%;
+}
+/*# sourceMappingURL=App.css.map */
